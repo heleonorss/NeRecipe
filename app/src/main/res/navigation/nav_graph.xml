@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/feedFragment">
+
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="ru.netology.nerecipe.ui.FeedFragment"
+        tools:layout="@layout/feed_fragment" >
+        <action
+            android:id="@+id/action_feedFragment_to_separateRecipeFragment"
+            app:destination="@id/separateRecipeFragment" />
+        <action
+            android:id="@+id/action_feedFragment_to_newRecipeFragment"
+            app:destination="@id/newOrEditedRecipeFragment" />
+        <action
+            android:id="@+id/action_feedFragment_to_favouriteRecipeFragment"
+            app:destination="@id/favouriteRecipeFragment" />
+
+        <argument
+            android:name="ShowAppBar"
+            android:defaultValue="true" />
+        <action
+            android:id="@+id/action_feedFragment_to_categoryFilterFragment"
+            app:destination="@id/categoryFilterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/separateRecipeFragment"
+        android:name="ru.netology.nerecipe.ui.SeparateRecipeFragment"
+        tools:layout="@layout/separate_recipe_view">
+        <argument
+            android:name="recipeCardId"
+            app:argType="long"
+            app:nullable="false" />
+        <action
+            android:id="@+id/action_separateRecipeFragment_to_newOrEditedRecipeFragment"
+            app:destination="@id/newOrEditedRecipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newOrEditedRecipeFragment"
+        android:name="ru.netology.nerecipe.ui.NewOrEditedRecipeFragment"
+        tools:layout="@layout/new_recipe_fragment">
+    <argument
+        android:name="currentRecipe"
+        app:argType="ru.netology.nerecipe.dto.Recipe"
+        app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteRecipeFragment"
+        android:name="ru.netology.nerecipe.ui.FavouriteRecipeFragment"
+        android:label="FavouriteRecipeFragment"
+        tools:layout="@layout/favourite_fragment">
+        <action
+            android:id="@+id/action_favouriteRecipeFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+
+        <argument
+            android:name="ShowAppBar"
+            android:defaultValue="true" />
+        <action
+            android:id="@+id/action_favouriteRecipeFragment_to_separateRecipeFragment"
+            app:destination="@id/separateRecipeFragment" />
+        <action
+            android:id="@+id/action_favouriteRecipeFragment_to_newOrEditedRecipeFragment"
+            app:destination="@id/newOrEditedRecipeFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFilterFragment"
+        android:name="ru.netology.nerecipe.ui.CategoryFilterFragment"
+        android:label="CategoryFilterFragment"
+        tools:layout="@layout/category_filters">
+        <argument
+            android:name="ShowAppBar"
+            android:defaultValue="true" />
+        <action
+            android:id="@+id/action_categoryFilterFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+
+    </fragment>
+
+
+
+</navigation>

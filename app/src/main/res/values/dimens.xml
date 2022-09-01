@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_spacing">16dp</dimen>
+    <dimen name="posts_avatar_size">68dp</dimen>
+    <dimen name="medium_spacing">8dp</dimen>
+    <dimen name="icon_button_min_size">32dp</dimen>
+    <dimen name="icon_button_padding_size">12dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="ok_margin">20dp</dimen>
+    <dimen name="little_spacing">4dp</dimen>
+</resources>

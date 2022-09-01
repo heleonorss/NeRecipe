@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Recipe Book</string>
+    <string name="hello">Hello World!</string>
+    <string name="avatar_description">Avatar description</string>
+    <string name="description_post_menu">Post menu</string>
+    <string name="add_recipe">Add recipe</string>
+    <string name="remove">Remove</string>
+    <string name="menu_edit">Edit</string>
+    <string name="recipeContent">Паста Карбонара (или спагетти Карбонара) — очень популярное блюдо итальянской кухни. Это спагетти с кусочками гуанчиале (сыровяленые свиные щёки), смешанные с соусом из яиц, сыра пармезан, соли и свежемолотого черного перца. Гуанчиале нередко заменяется панче́ттой (с итальянского pancetta — «грудинка» — разновидность бекона), поэтому пусть вас не пугают названия незнакомых мясных продуктов итальянской кухни, берите известные вам грудинку или бекон, только не копчённые. Соус Карбонара доходит до полной готовности от тепла только что сваренной горячей пасты. В классическом итальянском варианте соус Карбонара готовится без сливок, только с желтками, но в других странах сливки в соус нередко добавляют. Я предлагаю готовить пасту Карбонара со сливками, мне такой вариант больше нравится. Чеснок тоже в классическую пасту Карбонара не добавляется, но как мы уже выяснили, мы с вами будем готовить не самую аутентичную пасту, а уже немного адаптированную.</string>
+    <string name="recipe_save">Recipe save</string>
+    <string name="all_recipes">All recipes</string>
+    <string name="filter">Filter</string>
+    <string name="favourites">Favourites</string>
+    <string name="search">Search</string>
+    <string name="european_type">European</string>
+    <string name="asian_type">Asian</string>
+    <string name="panasian_type">Panasian</string>
+    <string name="eastern_type">Eastern</string>
+    <string name="american_type">American</string>
+    <string name="russian_type">Russian</string>
+    <string name="mediterranean_type">Mediterranean</string>
+    <string name="name_hint">Title</string>
+    <string name="author_name_hint">Author name</string>
+    <string name="content_hint">Content</string>
+    <string name="text_empty_list">Oops! Nothing has been selected yet</string>
+    <string name="cancel_filters">Cancel filters</string>
+    />
+</resources>
