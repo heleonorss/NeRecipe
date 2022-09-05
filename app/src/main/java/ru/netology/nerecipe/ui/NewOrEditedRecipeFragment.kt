@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioGroup
 import android.widget.Toast
+import androidx.core.view.get
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResult
 import androidx.fragment.app.viewModels
@@ -20,6 +21,7 @@ import ru.netology.nerecipe.databinding.RecipeBinding
 import ru.netology.nerecipe.dto.Category
 import ru.netology.nerecipe.dto.Recipe
 import ru.netology.nerecipe.viewModel.RecipeViewModel
+import java.util.*
 
 class NewOrEditedRecipeFragment : Fragment() {
 
@@ -39,7 +41,7 @@ class NewOrEditedRecipeFragment : Fragment() {
             with(binding) {
                 name.setText(thisRecipe.name)
                 content.setText(thisRecipe.content)
-                categoryRecipeCheckBox.check(R.id.checkBoxEuropean) // по умолчанию при редактировании ставится
+                categoryRecipeCheckBox.check(categoryRecipeCheckBox[thisRecipe.category.ordinal].id)
                 checkBoxEuropean.text = checkBoxEuropean.context.showCategories(Category.European)
                 checkBoxAsian.text = checkBoxAsian.context.showCategories(Category.Asian)
                 checkBoxPanasian.text = checkBoxPanasian.context.showCategories(Category.PanAsian)
